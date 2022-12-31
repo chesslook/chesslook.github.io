@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | ChessLook</title>
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <div>
+		<div class="navMenu" id="navMenu">
+      	    <a href="https://chesslook.github.io/">Chess</a>
+      	    <a href="minecraft.html">Minecraft</a>
+      	    <a href="support.html">Support</a>
+        </div>
+        <img src="assets/res.png" class="menu-logo" onclick="togglemenu()">
+    </div>
+    <div class="main">
+        <h1>SUPPORT</h1>
+        <h4>Please write your issue here</h4>
+        <div class="con">
+            <label>
+                <input id="name" type="subject" name="name" placeholder="Subject" minlength="1">
+            </label>
+            <label>
+                <input id="email" type="email" name="email" placeholder="Email" minlength="3">
+            </label>
+            <label>
+                <input id="img" type="url" name="email" placeholder="Attachment/Image Url (Optional)" minlength="3">
+            </label>
+            <label>
+                <textarea id="msg" name="message" placeholder="Message" maxlength="800"></textarea>
+            </label>
+        </div>
+        <button class="add" onclick="sendMessage()"><span>Send</span></button>
+    </div>
+    <script src="support.js"></script>
+</body>
+</html>
