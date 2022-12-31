@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141114;
+}
+.main {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    color: white;
+}
+.main h1 {
+    font-size: 50px;
+}
+.main input {
+    width: 300px;
+    background-color: #1a161a;
+    height: 35px;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.5s;
+    padding-left: 20px;
+    -webkit-transition: 0.5s;
+    outline: none;
+    color: white;
+}
+.main input:focus {
+    box-shadow: 1px 1px 8.6px rgb(7, 212, 0);
+}
+#sre {
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    margin-left: -3px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(7, 212, 0);
+    border-top-right-radius: 30px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    border-bottom-right-radius: 30px;
+}
+#sre:hover {
+    background-color: rgba(31, 163, 42, 0.877);
+}
+.navMenu {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    display: inline;
+    gap: 20px;
+    padding: 13px;
+    width: 100px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.navMenu a:hover {
+    color: rgb(7, 212, 0);
+}
+.menu-logo{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width:764px) {
+    .main {
+        margin-top: 250px;
+    }
+    .main input {
+        border-radius: 4px;
+    }
+    .navMenu {
+        z-index: 2;
+        top: 120px;
+        background-color: transparent;
+        border-radius: 8px;
+        left: 78%;
+    }
+    #sre {
+        margin-top: 20px;
+        width: 325px;
+        padding: 15px;
+        font-size: 18px;
+        font-family: 'Kanit', sans-serif;
+        border-radius: 4px;
+        color: black;
+        background-color: rgb(7, 212, 0);
+    }
+    .menu-logo{
+        display: block;
+        margin-right: 20px;
+        margin-left: auto;
+        width: 37px;
+        margin-top: 20px;
+    }
+    .navMenu a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .navMenu {
+        overflow: scroll;
+        transition: 0.5s;
+    }
+}
